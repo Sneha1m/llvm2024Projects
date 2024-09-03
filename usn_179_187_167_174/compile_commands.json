@@ -1,0 +1,7 @@
+[
+  {
+    "directory": "path_to_the_project_directory",
+    "command": "clang -I/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1 -I/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/x86_64-pc-linux-gnu -I/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/backward -I/usr/lib/clang/16/include -I/usr/local/include -I/usr/include -c target_code.c",
+    "file": "target_code.c"
+  }
+]
