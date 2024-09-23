@@ -1,0 +1,5 @@
+gcc -shared -o libpapiruntime.so -fPIC papi_library.c -lpapi  #compiles library
+clang++ -o code_injector code_injector.cpp $(llvm-config --cxxflags --ldflags --libs all) -lclang-cpp -lclang -lpthread -ldl -v #makes instrumentor
+./code_injector mergesort.c > injected_code.c  #instruments code
+clang -o ic injected_code.c -L. -lpapiruntime -lpapi #compiles instrumented code
+./ic -trace-papievents="PAPI_TOT_CYC,PAPI_L1_DCM,PAPI_TOT_INS" -output-file="out1.csv" #gives output

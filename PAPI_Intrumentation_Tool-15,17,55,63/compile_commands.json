@@ -1,0 +1,7 @@
+[
+  {
+      "directory": "/home/hp/cd-el",
+      "command": "clang  -o target_code.o -c target_code.c",
+      "file": "target_code.c"
+  }
+]
